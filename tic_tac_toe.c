@@ -12,7 +12,6 @@
  void markchoice(char);
  int main()
  {
-
   int gamestatus,returnum;
   char mark;
   player=1;
@@ -32,7 +31,6 @@
        player++;
 
   }while(gamestatus==(-1));
-
   if(gamestatus==1)
   {
      printf("---> player %d wins!!!!\n\n",--player);
@@ -42,8 +40,6 @@
       printf("invalid input\n");
 
    }  
-
-
  }
 
 void display(int x)
@@ -59,7 +55,6 @@ void display(int x)
        printf("\n");
       
 }
-
 int checkforwin(void){
        int returnum=0;
        if((square[1]==square[2])&&(square[2]==square[3]))
@@ -81,13 +76,10 @@ int checkforwin(void){
         else if(square[1]!='1'&&square[2]!='2'&&square[3]!='3'&&square[4]!='4'&&square[5]!='5'&&square[6]!='6'&&square[7]!='7'&&square[8]!='8'&&square[9]!='9')
            returnum=0;
       else 
-      returnum=-1;
-      
-      
+      returnum=-1; 
       return returnum;
    
 }
-
 void markchoice(char mark)
 {
    if(choice==1 && square[1]=='1')
@@ -110,13 +102,8 @@ void markchoice(char mark)
    square[9]=mark;
    else
    {
-
       printf("invalid input!!!!\n");
-      
    }
-  // player--;
-
-    
 }
 
 
