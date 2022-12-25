@@ -184,11 +184,6 @@ int days(int dd, int mm, int yyyy)
 
 
  }
-
-
-
-
-
 void getday(void) // func defination
 {
     // Write C code here
